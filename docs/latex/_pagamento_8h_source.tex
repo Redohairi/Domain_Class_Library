@@ -1,0 +1,52 @@
+\doxysection{Pagamento.\+h}
+\hypertarget{_pagamento_8h_source}{}\label{_pagamento_8h_source}\index{include/Pagamento.h@{include/Pagamento.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PAGAMENTO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PAGAMENTO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pagamento}{Pagamento}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ std::string\ codigo;\ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ cpf;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ data;\ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ valor;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ estado;\ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ std::string\ nome;\ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ percentual;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \mbox{\hyperlink{class_pagamento_abd6af8d62460d39096f0dc575d423ae8}{getCodigo}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ codigo;\ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ std::string\ \mbox{\hyperlink{class_pagamento_a2a08569f1b1a3ed752e7a367cd73f56d}{getCpf}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ cpf;\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ std::string\ \mbox{\hyperlink{class_pagamento_afff5c59c4493cb3477453587a016a3f4}{getData}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ data;\ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_pagamento_a58bfa30c7f2cf2c102ad5ad7c6dc4d27}{getValor}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ valor;\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ std::string\ \mbox{\hyperlink{class_pagamento_a747c283b63536d5677378d9b1d4fff8d}{getEstado}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ estado;\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ std::string\ \mbox{\hyperlink{class_pagamento_adae4b5f1c93384dd23b75cc52e93d1bb}{getNome}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ nome;\ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pagamento_a4083b0580730a1a0c2d36de53bc589e7}{getPercentual}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ percentual;\ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_ad27e3db11ce509c50c6ca5a58ae72f9f}{setCodigo}}(\textcolor{keyword}{const}\ std::string\&\ codigo)\ \{\ this-\/>codigo\ =\ codigo;\ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_ab1453a1a99b5a190ec76140e2340d03b}{setCpf}}(\textcolor{keyword}{const}\ std::string\&\ cpf)\ \{\ this-\/>cpf\ =\ cpf;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_a62fc9f247d01e760160321b87f805f7d}{setData}}(\textcolor{keyword}{const}\ std::string\&\ data);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_a92fbf3ce7d203d0124beccd149611ecc}{setValor}}(\textcolor{keywordtype}{double}\ valor);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_af76e25486462551fc7e2179ff770524d}{setEstado}}(\textcolor{keyword}{const}\ std::string\&\ estado);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_a589978b4f519cd1192e9ccb0e84df31b}{setNome}}(\textcolor{keyword}{const}\ std::string\&\ nome)\ \{\ this-\/>nome\ =\ nome;\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_a8f0e376d64105a21e3db9b98c82bf007}{setPercentual}}(\textcolor{keywordtype}{int}\ percentual)\ \{\ this-\/>percentual\ =\ percentual;\ \}}
+\DoxyCodeLine{00122\ \};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAGAMENTO\_H}}
+
+\end{DoxyCode}

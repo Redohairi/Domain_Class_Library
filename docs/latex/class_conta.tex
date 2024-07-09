@@ -1,0 +1,145 @@
+\doxysection{Conta Class Reference}
+\hypertarget{class_conta}{}\label{class_conta}\index{Conta@{Conta}}
+
+
+Classe \doxylink{class_conta}{Conta}.  
+
+
+
+
+{\ttfamily \#include $<$conta.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_conta_a9cabb588a8ac3f187246e8a4b1b342cd}{set\+Cpf}} (const std\+::string \&cpf)
+\begin{DoxyCompactList}\small\item\em Define o CPF do titular da conta. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_conta_a0c0571311c16cf7dad72635c80b52014}{get\+Cpf}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o CPF do titular da conta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conta_ab6891e04f03fef3b1ab3ac0a848a50d5}{set\+Nome}} (const std\+::string \&nome)
+\begin{DoxyCompactList}\small\item\em Define o nome do titular da conta. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_conta_a87cd1df69c12e0dfdb6ab70a4aa2fd4b}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o nome do titular da conta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conta_aa2eb12e56a4c2efced722f92ce22aa7a}{set\+Senha}} (const std\+::string \&senha)
+\begin{DoxyCompactList}\small\item\em Define a senha de acesso da conta. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_conta_aace6d48702efd2d146db2e97ba1efba1}{get\+Senha}} () const
+\begin{DoxyCompactList}\small\item\em Retorna a senha de acesso da conta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{class_conta}{Conta}. 
+
+Esta classe representa uma conta de usuário com operações para manipular as informações da conta. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_conta_a0c0571311c16cf7dad72635c80b52014}\index{Conta@{Conta}!getCpf@{getCpf}}
+\index{getCpf@{getCpf}!Conta@{Conta}}
+\doxysubsubsection{\texorpdfstring{getCpf()}{getCpf()}}
+{\footnotesize\ttfamily \label{class_conta_a0c0571311c16cf7dad72635c80b52014} 
+std\+::string Conta\+::get\+Cpf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna o CPF do titular da conta. 
+
+\begin{DoxyReturn}{Returns}
+string com o CPF do titular. 
+\end{DoxyReturn}
+\Hypertarget{class_conta_a87cd1df69c12e0dfdb6ab70a4aa2fd4b}\index{Conta@{Conta}!getNome@{getNome}}
+\index{getNome@{getNome}!Conta@{Conta}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_conta_a87cd1df69c12e0dfdb6ab70a4aa2fd4b} 
+std\+::string Conta\+::get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna o nome do titular da conta. 
+
+\begin{DoxyReturn}{Returns}
+string com o nome do titular. 
+\end{DoxyReturn}
+\Hypertarget{class_conta_aace6d48702efd2d146db2e97ba1efba1}\index{Conta@{Conta}!getSenha@{getSenha}}
+\index{getSenha@{getSenha}!Conta@{Conta}}
+\doxysubsubsection{\texorpdfstring{getSenha()}{getSenha()}}
+{\footnotesize\ttfamily \label{class_conta_aace6d48702efd2d146db2e97ba1efba1} 
+std\+::string Conta\+::get\+Senha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna a senha de acesso da conta. 
+
+\begin{DoxyReturn}{Returns}
+string com a senha. 
+\end{DoxyReturn}
+\Hypertarget{class_conta_a9cabb588a8ac3f187246e8a4b1b342cd}\index{Conta@{Conta}!setCpf@{setCpf}}
+\index{setCpf@{setCpf}!Conta@{Conta}}
+\doxysubsubsection{\texorpdfstring{setCpf()}{setCpf()}}
+{\footnotesize\ttfamily \label{class_conta_a9cabb588a8ac3f187246e8a4b1b342cd} 
+void Conta\+::set\+Cpf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption})}
+
+
+
+Define o CPF do titular da conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & string contendo o CPF do titular. Deve validar o CPF antes de atribuir.\\
+\hline
+{\em cpf} & string contendo o CPF do titular. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & se o CPF for inválido. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_conta_ab6891e04f03fef3b1ab3ac0a848a50d5}\index{Conta@{Conta}!setNome@{setNome}}
+\index{setNome@{setNome}!Conta@{Conta}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_conta_ab6891e04f03fef3b1ab3ac0a848a50d5} 
+void Conta\+::set\+Nome (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome}{}\end{DoxyParamCaption})}
+
+
+
+Define o nome do titular da conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & string contendo o nome do titular. O nome deve ser verificado quanto a caracteres inválidos antes da atribuição.\\
+\hline
+{\em nome} & string contendo o nome do titular. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & se o nome for vazio, tiver menos de 3 caracteres, ou contiver caracteres inválidos. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_conta_aa2eb12e56a4c2efced722f92ce22aa7a}\index{Conta@{Conta}!setSenha@{setSenha}}
+\index{setSenha@{setSenha}!Conta@{Conta}}
+\doxysubsubsection{\texorpdfstring{setSenha()}{setSenha()}}
+{\footnotesize\ttfamily \label{class_conta_aa2eb12e56a4c2efced722f92ce22aa7a} 
+void Conta\+::set\+Senha (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{senha}{}\end{DoxyParamCaption})}
+
+
+
+Define a senha de acesso da conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em senha} & string contendo a senha. A senha deve atender a critérios de complexidade especificados.\\
+\hline
+{\em senha} & string contendo a senha. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & se a senha for inválida. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/conta.\+h\item 
+src/conta.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\doxysection{Conta\+Manager Class Reference}
+\hypertarget{class_conta_manager}{}\label{class_conta_manager}\index{ContaManager@{ContaManager}}
+
+
+Classe \doxylink{class_conta_manager}{Conta\+Manager}.  
+
+
+
+
+{\ttfamily \#include $<$Conta\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_conta_manager_af4a83d80271d8d0a23b03b11e5a16547}{criar\+Conta}} (const \mbox{\hyperlink{class_conta}{Conta}} \&conta)
+\begin{DoxyCompactList}\small\item\em Cria uma nova conta e adiciona ao vetor de contas gerenciadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conta}{Conta}} \mbox{\hyperlink{class_conta_manager_ab22c23496d7b72978b9da0e5a4384b67}{ler\+Conta}} (const std\+::string \&cpf) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna uma conta pelo CPF. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conta_manager_aae2c354000c9e08a5abcd65971bb69ff}{atualizar\+Conta}} (const \mbox{\hyperlink{class_conta}{Conta}} \&conta)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma conta existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conta_manager_a1d913174779808da54f02b7b321d482a}{excluir\+Conta}} (const std\+::string \&cpf)
+\begin{DoxyCompactList}\small\item\em Exclui uma conta com base no CPF fornecido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{class_conta_manager}{Conta\+Manager}. 
+
+Esta classe gerencia um conjunto de contas, permitindo criar, ler, atualizar e excluir contas. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_conta_manager_aae2c354000c9e08a5abcd65971bb69ff}\index{ContaManager@{ContaManager}!atualizarConta@{atualizarConta}}
+\index{atualizarConta@{atualizarConta}!ContaManager@{ContaManager}}
+\doxysubsubsection{\texorpdfstring{atualizarConta()}{atualizarConta()}}
+{\footnotesize\ttfamily \label{class_conta_manager_aae2c354000c9e08a5abcd65971bb69ff} 
+void Conta\+Manager\+::atualizar\+Conta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_conta}{Conta}} \&}]{conta}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de uma conta existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conta} & A conta com os dados atualizados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a conta não for encontrada. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_conta_manager_af4a83d80271d8d0a23b03b11e5a16547}\index{ContaManager@{ContaManager}!criarConta@{criarConta}}
+\index{criarConta@{criarConta}!ContaManager@{ContaManager}}
+\doxysubsubsection{\texorpdfstring{criarConta()}{criarConta()}}
+{\footnotesize\ttfamily \label{class_conta_manager_af4a83d80271d8d0a23b03b11e5a16547} 
+void Conta\+Manager\+::criar\+Conta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_conta}{Conta}} \&}]{conta}{}\end{DoxyParamCaption})}
+
+
+
+Cria uma nova conta e adiciona ao vetor de contas gerenciadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conta} & A conta a ser criada e adicionada. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_conta_manager_a1d913174779808da54f02b7b321d482a}\index{ContaManager@{ContaManager}!excluirConta@{excluirConta}}
+\index{excluirConta@{excluirConta}!ContaManager@{ContaManager}}
+\doxysubsubsection{\texorpdfstring{excluirConta()}{excluirConta()}}
+{\footnotesize\ttfamily \label{class_conta_manager_a1d913174779808da54f02b7b321d482a} 
+void Conta\+Manager\+::excluir\+Conta (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption})}
+
+
+
+Exclui uma conta com base no CPF fornecido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF da conta a ser excluída. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a conta não for encontrada. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_conta_manager_ab22c23496d7b72978b9da0e5a4384b67}\index{ContaManager@{ContaManager}!lerConta@{lerConta}}
+\index{lerConta@{lerConta}!ContaManager@{ContaManager}}
+\doxysubsubsection{\texorpdfstring{lerConta()}{lerConta()}}
+{\footnotesize\ttfamily \label{class_conta_manager_ab22c23496d7b72978b9da0e5a4384b67} 
+\mbox{\hyperlink{class_conta}{Conta}} Conta\+Manager\+::ler\+Conta (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna uma conta pelo CPF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF da conta a ser buscada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_conta}{Conta} A conta correspondente ao CPF fornecido. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a conta não for encontrada. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Conta\+Manager.\+h\item 
+src/Conta\+Manager.\+cpp\end{DoxyCompactItemize}

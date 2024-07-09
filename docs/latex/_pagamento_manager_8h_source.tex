@@ -1,0 +1,29 @@
+\doxysection{Pagamento\+Manager.\+h}
+\hypertarget{_pagamento_manager_8h_source}{}\label{_pagamento_manager_8h_source}\index{include/PagamentoManager.h@{include/PagamentoManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PAGAMENTOMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PAGAMENTOMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Pagamento.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pagamento_manager}{PagamentoManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::vector<Pagamento>\ pagamentos;\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_manager_aace145dff32e28170af5f2b4f1d1f5ec}{criarPagamento}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pagamento}{Pagamento}}\&\ pagamento);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_pagamento}{Pagamento}}\ \mbox{\hyperlink{class_pagamento_manager_a7119b96318b7ec450a1b2c5e6b22e5cc}{lerPagamento}}(\textcolor{keyword}{const}\ std::string\&\ codigo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<Pagamento>\ \mbox{\hyperlink{class_pagamento_manager_af433c2445f11e6ff80fbef3d9b882cf5}{lerPagamentos}}(\textcolor{keyword}{const}\ std::string\&\ cpf)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_manager_ac1bdbb9e22e869aa6523d5f083bfca99}{atualizarPagamento}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pagamento}{Pagamento}}\&\ pagamento);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pagamento_manager_a0ec76972124a561fe84aaa9fbe005b91}{excluirPagamento}}(\textcolor{keyword}{const}\ std::string\&\ codigo);}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAGAMENTOMANAGER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,55 @@
+\doxysection{Servico\+Financeiro.\+h}
+\hypertarget{_servico_financeiro_8h_source}{}\label{_servico_financeiro_8h_source}\index{include/ServicoFinanceiro.h@{include/ServicoFinanceiro.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SERVICOFINANCEIRO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SERVICOFINANCEIRO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Conta.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Titulo.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Pagamento.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_servico_financeiro}{ServicoFinanceiro}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ std::vector<Conta>\ contas;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<Titulo>\ titulos;\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ std::vector<Pagamento>\ pagamentos;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Métodos\ para\ Conta}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_ab379504bc9b1805b14c8d644328a4610}{criarConta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_conta}{Conta}}\&\ conta);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_conta}{Conta}}\ \mbox{\hyperlink{class_servico_financeiro_ae519a9406959da2e1f4800a2c608b8c8}{lerConta}}(\textcolor{keyword}{const}\ std::string\&\ cpf)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_a3943ae85c599257028da9bc1ab8d5915}{atualizarConta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_conta}{Conta}}\&\ conta);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_afe92ab0cffe20bee6cf4c90716f66474}{excluirConta}}(\textcolor{keyword}{const}\ std::string\&\ cpf);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ std::vector<Conta>\ \mbox{\hyperlink{class_servico_financeiro_a9a8ad9bd8b7923fb3e32c12c0be0f202}{lerContas}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ Métodos\ para\ Titulo}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_ab308c5fdbbd9ae82913f068e95d016d5}{criarTitulo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_titulo}{Titulo}}\&\ titulo);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ \ \ \ \ std::vector<Titulo>\ \mbox{\hyperlink{class_servico_financeiro_ad0e81fb5e09d117abe18af1dc475becb}{lerTitulos}}(\textcolor{keyword}{const}\ std::string\&\ codigo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_a0097747588bf886918f5f85a8df25d41}{atualizarTitulo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_titulo}{Titulo}}\&\ titulo);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_a16592b2a9ac02762e81e8c765b563ead}{excluirTitulo}}(\textcolor{keyword}{const}\ std::string\&\ codigo);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ Métodos\ para\ Pagamento}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_ae7070330998ae729f72066dd53f64636}{criarPagamento}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pagamento}{Pagamento}}\&\ pagamento);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ \ \ \ \ std::vector<Pagamento>\ \mbox{\hyperlink{class_servico_financeiro_a9ffbf2fb289145280031a5cc6d1873e5}{lerPagamentos}}(\textcolor{keyword}{const}\ std::string\&\ codigo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_a6a2ea1e1b2aae84db8311de368d19dc2}{atualizarPagamento}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pagamento}{Pagamento}}\&\ pagamento);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servico_financeiro_ac301e4b94217cee4f511a5c58fbed0c9}{excluirPagamento}}(\textcolor{keyword}{const}\ std::string\&\ codigo);}
+\DoxyCodeLine{00127\ \};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SERVICOFINANCEIRO\_H}}
+
+\end{DoxyCode}

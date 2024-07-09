@@ -1,0 +1,134 @@
+\doxysection{Pagamento\+Manager Class Reference}
+\hypertarget{class_pagamento_manager}{}\label{class_pagamento_manager}\index{PagamentoManager@{PagamentoManager}}
+
+
+Classe \doxylink{class_pagamento_manager}{Pagamento\+Manager}.  
+
+
+
+
+{\ttfamily \#include $<$Pagamento\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pagamento_manager_aace145dff32e28170af5f2b4f1d1f5ec}{criar\+Pagamento}} (const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&pagamento)
+\begin{DoxyCompactList}\small\item\em Cria um novo pagamento e adiciona ao vetor de pagamentos gerenciados. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pagamento}{Pagamento}} \mbox{\hyperlink{class_pagamento_manager_a7119b96318b7ec450a1b2c5e6b22e5cc}{ler\+Pagamento}} (const std\+::string \&codigo) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna um pagamento pelo código. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_pagamento}{Pagamento}} $>$ \mbox{\hyperlink{class_pagamento_manager_af433c2445f11e6ff80fbef3d9b882cf5}{ler\+Pagamentos}} (const std\+::string \&cpf) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna todos os pagamentos associados a um CPF. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pagamento_manager_ac1bdbb9e22e869aa6523d5f083bfca99}{atualizar\+Pagamento}} (const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&pagamento)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um pagamento existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pagamento_manager_a0ec76972124a561fe84aaa9fbe005b91}{excluir\+Pagamento}} (const std\+::string \&codigo)
+\begin{DoxyCompactList}\small\item\em Exclui um pagamento com base no código fornecido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{class_pagamento_manager}{Pagamento\+Manager}. 
+
+Esta classe gerencia um conjunto de pagamentos, permitindo criar, ler, atualizar e excluir pagamentos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pagamento_manager_ac1bdbb9e22e869aa6523d5f083bfca99}\index{PagamentoManager@{PagamentoManager}!atualizarPagamento@{atualizarPagamento}}
+\index{atualizarPagamento@{atualizarPagamento}!PagamentoManager@{PagamentoManager}}
+\doxysubsubsection{\texorpdfstring{atualizarPagamento()}{atualizarPagamento()}}
+{\footnotesize\ttfamily \label{class_pagamento_manager_ac1bdbb9e22e869aa6523d5f083bfca99} 
+void Pagamento\+Manager\+::atualizar\+Pagamento (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&}]{pagamento}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um pagamento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento com os dados atualizados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o pagamento não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pagamento_manager_aace145dff32e28170af5f2b4f1d1f5ec}\index{PagamentoManager@{PagamentoManager}!criarPagamento@{criarPagamento}}
+\index{criarPagamento@{criarPagamento}!PagamentoManager@{PagamentoManager}}
+\doxysubsubsection{\texorpdfstring{criarPagamento()}{criarPagamento()}}
+{\footnotesize\ttfamily \label{class_pagamento_manager_aace145dff32e28170af5f2b4f1d1f5ec} 
+void Pagamento\+Manager\+::criar\+Pagamento (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&}]{pagamento}{}\end{DoxyParamCaption})}
+
+
+
+Cria um novo pagamento e adiciona ao vetor de pagamentos gerenciados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento a ser criado e adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pagamento_manager_a0ec76972124a561fe84aaa9fbe005b91}\index{PagamentoManager@{PagamentoManager}!excluirPagamento@{excluirPagamento}}
+\index{excluirPagamento@{excluirPagamento}!PagamentoManager@{PagamentoManager}}
+\doxysubsubsection{\texorpdfstring{excluirPagamento()}{excluirPagamento()}}
+{\footnotesize\ttfamily \label{class_pagamento_manager_a0ec76972124a561fe84aaa9fbe005b91} 
+void Pagamento\+Manager\+::excluir\+Pagamento (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+Exclui um pagamento com base no código fornecido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código do pagamento a ser excluído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o pagamento não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pagamento_manager_a7119b96318b7ec450a1b2c5e6b22e5cc}\index{PagamentoManager@{PagamentoManager}!lerPagamento@{lerPagamento}}
+\index{lerPagamento@{lerPagamento}!PagamentoManager@{PagamentoManager}}
+\doxysubsubsection{\texorpdfstring{lerPagamento()}{lerPagamento()}}
+{\footnotesize\ttfamily \label{class_pagamento_manager_a7119b96318b7ec450a1b2c5e6b22e5cc} 
+\mbox{\hyperlink{class_pagamento}{Pagamento}} Pagamento\+Manager\+::ler\+Pagamento (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna um pagamento pelo código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código do pagamento a ser buscado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_pagamento}{Pagamento} O pagamento correspondente ao código fornecido. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o pagamento não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_pagamento_manager_af433c2445f11e6ff80fbef3d9b882cf5}\index{PagamentoManager@{PagamentoManager}!lerPagamentos@{lerPagamentos}}
+\index{lerPagamentos@{lerPagamentos}!PagamentoManager@{PagamentoManager}}
+\doxysubsubsection{\texorpdfstring{lerPagamentos()}{lerPagamentos()}}
+{\footnotesize\ttfamily \label{class_pagamento_manager_af433c2445f11e6ff80fbef3d9b882cf5} 
+std\+::vector$<$ \mbox{\hyperlink{class_pagamento}{Pagamento}} $>$ Pagamento\+Manager\+::ler\+Pagamentos (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna todos os pagamentos associados a um CPF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF dos pagamentos a serem buscados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Pagamento$>$ Um vetor contendo todos os pagamentos associados ao CPF fornecido. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Pagamento\+Manager.\+h\item 
+src/Pagamento\+Manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1720412272 source:c:\users\davib\downloads\projeto 1 tp\t1-tp1-davi\src\main.cpp
+	<iostream>
+	"ServicoFinanceiro.h"
+
+1720417038 c:\users\davib\downloads\projeto 1 tp\t1-tp1-davi\include\servicofinanceiro.h
+	<vector>
+	"Conta.h"
+	"Titulo.h"
+	"Pagamento.h"
+
+1720416179 c:\users\davib\downloads\projeto 1 tp\t1-tp1-davi\include\conta.h
+	<string>
+
+1720417287 c:\users\davib\downloads\projeto 1 tp\t1-tp1-davi\include\titulo.h
+	<string>
+
+1720416497 c:\users\davib\downloads\projeto 1 tp\t1-tp1-davi\include\pagamento.h
+	<string>
+

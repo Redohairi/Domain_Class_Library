@@ -1,0 +1,29 @@
+\doxysection{TItulo\+Manager.\+h}
+\hypertarget{_t_itulo_manager_8h_source}{}\label{_t_itulo_manager_8h_source}\index{include/TItuloManager.h@{include/TItuloManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TITULOMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TITULOMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Titulo.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_titulo_manager}{TituloManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::vector<Titulo>\ titulos;\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_titulo_manager_abeadf9c374f90d010add75c09d009e0a}{criarTitulo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_titulo}{Titulo}}\&\ titulo);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_titulo}{Titulo}}\ \mbox{\hyperlink{class_titulo_manager_a343addd25f1254ec8813ce8f68b925e4}{lerTitulo}}(\textcolor{keyword}{const}\ std::string\&\ codigo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ \ \ \ \ std::vector<Titulo>\ \mbox{\hyperlink{class_titulo_manager_a74e9109e102731f661a2c43fb8f58704}{lerTitulos}}(\textcolor{keyword}{const}\ std::string\&\ cpf)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_titulo_manager_aa530078562f33a4e6bdc891c571a79c5}{atualizarTitulo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_titulo}{Titulo}}\&\ titulo);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_titulo_manager_a8370baa4e26177e752279b1d3f283661}{excluirTitulo}}(\textcolor{keyword}{const}\ std::string\&\ codigo);}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TITULOMANAGER\_H}}
+
+\end{DoxyCode}

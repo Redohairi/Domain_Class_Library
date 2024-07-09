@@ -1,0 +1,134 @@
+\doxysection{Titulo\+Manager Class Reference}
+\hypertarget{class_titulo_manager}{}\label{class_titulo_manager}\index{TituloManager@{TituloManager}}
+
+
+Classe \doxylink{class_titulo_manager}{Titulo\+Manager}.  
+
+
+
+
+{\ttfamily \#include $<$TItulo\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_titulo_manager_abeadf9c374f90d010add75c09d009e0a}{criar\+Titulo}} (const \mbox{\hyperlink{class_titulo}{Titulo}} \&titulo)
+\begin{DoxyCompactList}\small\item\em Cria um novo título e adiciona ao vetor de títulos gerenciados. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_titulo}{Titulo}} \mbox{\hyperlink{class_titulo_manager_a343addd25f1254ec8813ce8f68b925e4}{ler\+Titulo}} (const std\+::string \&codigo) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna um título pelo código. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_titulo}{Titulo}} $>$ \mbox{\hyperlink{class_titulo_manager_a74e9109e102731f661a2c43fb8f58704}{ler\+Titulos}} (const std\+::string \&cpf) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna todos os títulos associados a um CPF. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_titulo_manager_aa530078562f33a4e6bdc891c571a79c5}{atualizar\+Titulo}} (const \mbox{\hyperlink{class_titulo}{Titulo}} \&titulo)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um título existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_titulo_manager_a8370baa4e26177e752279b1d3f283661}{excluir\+Titulo}} (const std\+::string \&codigo)
+\begin{DoxyCompactList}\small\item\em Exclui um título com base no código fornecido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{class_titulo_manager}{Titulo\+Manager}. 
+
+Esta classe gerencia um conjunto de títulos, permitindo criar, ler, atualizar e excluir títulos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_titulo_manager_aa530078562f33a4e6bdc891c571a79c5}\index{TituloManager@{TituloManager}!atualizarTitulo@{atualizarTitulo}}
+\index{atualizarTitulo@{atualizarTitulo}!TituloManager@{TituloManager}}
+\doxysubsubsection{\texorpdfstring{atualizarTitulo()}{atualizarTitulo()}}
+{\footnotesize\ttfamily \label{class_titulo_manager_aa530078562f33a4e6bdc891c571a79c5} 
+void Titulo\+Manager\+::atualizar\+Titulo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_titulo}{Titulo}} \&}]{titulo}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um título existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título com os dados atualizados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o título não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_titulo_manager_abeadf9c374f90d010add75c09d009e0a}\index{TituloManager@{TituloManager}!criarTitulo@{criarTitulo}}
+\index{criarTitulo@{criarTitulo}!TituloManager@{TituloManager}}
+\doxysubsubsection{\texorpdfstring{criarTitulo()}{criarTitulo()}}
+{\footnotesize\ttfamily \label{class_titulo_manager_abeadf9c374f90d010add75c09d009e0a} 
+void Titulo\+Manager\+::criar\+Titulo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_titulo}{Titulo}} \&}]{titulo}{}\end{DoxyParamCaption})}
+
+
+
+Cria um novo título e adiciona ao vetor de títulos gerenciados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título a ser criado e adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_titulo_manager_a8370baa4e26177e752279b1d3f283661}\index{TituloManager@{TituloManager}!excluirTitulo@{excluirTitulo}}
+\index{excluirTitulo@{excluirTitulo}!TituloManager@{TituloManager}}
+\doxysubsubsection{\texorpdfstring{excluirTitulo()}{excluirTitulo()}}
+{\footnotesize\ttfamily \label{class_titulo_manager_a8370baa4e26177e752279b1d3f283661} 
+void Titulo\+Manager\+::excluir\+Titulo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+Exclui um título com base no código fornecido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código do título a ser excluído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o título não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_titulo_manager_a343addd25f1254ec8813ce8f68b925e4}\index{TituloManager@{TituloManager}!lerTitulo@{lerTitulo}}
+\index{lerTitulo@{lerTitulo}!TituloManager@{TituloManager}}
+\doxysubsubsection{\texorpdfstring{lerTitulo()}{lerTitulo()}}
+{\footnotesize\ttfamily \label{class_titulo_manager_a343addd25f1254ec8813ce8f68b925e4} 
+\mbox{\hyperlink{class_titulo}{Titulo}} Titulo\+Manager\+::ler\+Titulo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna um título pelo código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código do título a ser buscado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_titulo}{Titulo} O título correspondente ao código fornecido. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o título não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_titulo_manager_a74e9109e102731f661a2c43fb8f58704}\index{TituloManager@{TituloManager}!lerTitulos@{lerTitulos}}
+\index{lerTitulos@{lerTitulos}!TituloManager@{TituloManager}}
+\doxysubsubsection{\texorpdfstring{lerTitulos()}{lerTitulos()}}
+{\footnotesize\ttfamily \label{class_titulo_manager_a74e9109e102731f661a2c43fb8f58704} 
+std\+::vector$<$ \mbox{\hyperlink{class_titulo}{Titulo}} $>$ Titulo\+Manager\+::ler\+Titulos (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna todos os títulos associados a um CPF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF dos títulos a serem buscados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Titulo$>$ Um vetor contendo todos os títulos associados ao CPF fornecido. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/TItulo\+Manager.\+h\item 
+src/TItulo\+Manager.\+cpp\end{DoxyCompactItemize}

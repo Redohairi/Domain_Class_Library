@@ -1,0 +1,291 @@
+\doxysection{Servico\+Financeiro Class Reference}
+\hypertarget{class_servico_financeiro}{}\label{class_servico_financeiro}\index{ServicoFinanceiro@{ServicoFinanceiro}}
+
+
+Classe \doxylink{class_servico_financeiro}{Servico\+Financeiro}.  
+
+
+
+
+{\ttfamily \#include $<$Servico\+Financeiro.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_servico_financeiro_ab379504bc9b1805b14c8d644328a4610}{criar\+Conta}} (const \mbox{\hyperlink{class_conta}{Conta}} \&conta)
+\begin{DoxyCompactList}\small\item\em Cria uma nova conta e adiciona ao vetor de contas gerenciadas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conta}{Conta}} \mbox{\hyperlink{class_servico_financeiro_ae519a9406959da2e1f4800a2c608b8c8}{ler\+Conta}} (const std\+::string \&cpf) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna uma conta pelo CPF. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_a3943ae85c599257028da9bc1ab8d5915}{atualizar\+Conta}} (const \mbox{\hyperlink{class_conta}{Conta}} \&conta)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma conta existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_afe92ab0cffe20bee6cf4c90716f66474}{excluir\+Conta}} (const std\+::string \&cpf)
+\begin{DoxyCompactList}\small\item\em Exclui uma conta com base no CPF fornecido. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_conta}{Conta}} $>$ \mbox{\hyperlink{class_servico_financeiro_a9a8ad9bd8b7923fb3e32c12c0be0f202}{ler\+Contas}} () const
+\begin{DoxyCompactList}\small\item\em Retorna todas as contas gerenciadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_ab308c5fdbbd9ae82913f068e95d016d5}{criar\+Titulo}} (const \mbox{\hyperlink{class_titulo}{Titulo}} \&titulo)
+\begin{DoxyCompactList}\small\item\em Cria um novo título e adiciona ao vetor de títulos gerenciados. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_titulo}{Titulo}} $>$ \mbox{\hyperlink{class_servico_financeiro_ad0e81fb5e09d117abe18af1dc475becb}{ler\+Titulos}} (const std\+::string \&codigo) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna todos os títulos associados a um código. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_a0097747588bf886918f5f85a8df25d41}{atualizar\+Titulo}} (const \mbox{\hyperlink{class_titulo}{Titulo}} \&titulo)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um título existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_a16592b2a9ac02762e81e8c765b563ead}{excluir\+Titulo}} (const std\+::string \&codigo)
+\begin{DoxyCompactList}\small\item\em Exclui um título com base no código fornecido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_ae7070330998ae729f72066dd53f64636}{criar\+Pagamento}} (const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&pagamento)
+\begin{DoxyCompactList}\small\item\em Cria um novo pagamento e adiciona ao vetor de pagamentos gerenciados. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_pagamento}{Pagamento}} $>$ \mbox{\hyperlink{class_servico_financeiro_a9ffbf2fb289145280031a5cc6d1873e5}{ler\+Pagamentos}} (const std\+::string \&codigo) const
+\begin{DoxyCompactList}\small\item\em Busca e retorna todos os pagamentos associados a um código. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_a6a2ea1e1b2aae84db8311de368d19dc2}{atualizar\+Pagamento}} (const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&pagamento)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um pagamento existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servico_financeiro_ac301e4b94217cee4f511a5c58fbed0c9}{excluir\+Pagamento}} (const std\+::string \&codigo)
+\begin{DoxyCompactList}\small\item\em Exclui um pagamento com base no código fornecido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \doxylink{class_servico_financeiro}{Servico\+Financeiro}. 
+
+Esta classe gerencia contas, títulos e pagamentos, permitindo criar, ler, atualizar e excluir esses objetos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_servico_financeiro_a3943ae85c599257028da9bc1ab8d5915}\index{ServicoFinanceiro@{ServicoFinanceiro}!atualizarConta@{atualizarConta}}
+\index{atualizarConta@{atualizarConta}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{atualizarConta()}{atualizarConta()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_a3943ae85c599257028da9bc1ab8d5915} 
+void Servico\+Financeiro\+::atualizar\+Conta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_conta}{Conta}} \&}]{conta}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de uma conta existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conta} & A conta com os dados atualizados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a conta não for encontrada. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_a6a2ea1e1b2aae84db8311de368d19dc2}\index{ServicoFinanceiro@{ServicoFinanceiro}!atualizarPagamento@{atualizarPagamento}}
+\index{atualizarPagamento@{atualizarPagamento}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{atualizarPagamento()}{atualizarPagamento()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_a6a2ea1e1b2aae84db8311de368d19dc2} 
+void Servico\+Financeiro\+::atualizar\+Pagamento (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&}]{pagamento}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um pagamento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento com os dados atualizados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o pagamento não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_a0097747588bf886918f5f85a8df25d41}\index{ServicoFinanceiro@{ServicoFinanceiro}!atualizarTitulo@{atualizarTitulo}}
+\index{atualizarTitulo@{atualizarTitulo}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{atualizarTitulo()}{atualizarTitulo()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_a0097747588bf886918f5f85a8df25d41} 
+void Servico\+Financeiro\+::atualizar\+Titulo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_titulo}{Titulo}} \&}]{titulo}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um título existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título com os dados atualizados. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o título não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_ab379504bc9b1805b14c8d644328a4610}\index{ServicoFinanceiro@{ServicoFinanceiro}!criarConta@{criarConta}}
+\index{criarConta@{criarConta}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{criarConta()}{criarConta()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_ab379504bc9b1805b14c8d644328a4610} 
+void Servico\+Financeiro\+::criar\+Conta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_conta}{Conta}} \&}]{conta}{}\end{DoxyParamCaption})}
+
+
+
+Cria uma nova conta e adiciona ao vetor de contas gerenciadas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em conta} & A conta a ser criada e adicionada. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_servico_financeiro_ae7070330998ae729f72066dd53f64636}\index{ServicoFinanceiro@{ServicoFinanceiro}!criarPagamento@{criarPagamento}}
+\index{criarPagamento@{criarPagamento}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{criarPagamento()}{criarPagamento()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_ae7070330998ae729f72066dd53f64636} 
+void Servico\+Financeiro\+::criar\+Pagamento (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pagamento}{Pagamento}} \&}]{pagamento}{}\end{DoxyParamCaption})}
+
+
+
+Cria um novo pagamento e adiciona ao vetor de pagamentos gerenciados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento a ser criado e adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_servico_financeiro_ab308c5fdbbd9ae82913f068e95d016d5}\index{ServicoFinanceiro@{ServicoFinanceiro}!criarTitulo@{criarTitulo}}
+\index{criarTitulo@{criarTitulo}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{criarTitulo()}{criarTitulo()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_ab308c5fdbbd9ae82913f068e95d016d5} 
+void Servico\+Financeiro\+::criar\+Titulo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_titulo}{Titulo}} \&}]{titulo}{}\end{DoxyParamCaption})}
+
+
+
+Cria um novo título e adiciona ao vetor de títulos gerenciados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título a ser criado e adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_servico_financeiro_afe92ab0cffe20bee6cf4c90716f66474}\index{ServicoFinanceiro@{ServicoFinanceiro}!excluirConta@{excluirConta}}
+\index{excluirConta@{excluirConta}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{excluirConta()}{excluirConta()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_afe92ab0cffe20bee6cf4c90716f66474} 
+void Servico\+Financeiro\+::excluir\+Conta (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption})}
+
+
+
+Exclui uma conta com base no CPF fornecido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF da conta a ser excluída. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a conta não for encontrada. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_ac301e4b94217cee4f511a5c58fbed0c9}\index{ServicoFinanceiro@{ServicoFinanceiro}!excluirPagamento@{excluirPagamento}}
+\index{excluirPagamento@{excluirPagamento}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{excluirPagamento()}{excluirPagamento()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_ac301e4b94217cee4f511a5c58fbed0c9} 
+void Servico\+Financeiro\+::excluir\+Pagamento (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+Exclui um pagamento com base no código fornecido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código do pagamento a ser excluído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o pagamento não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_a16592b2a9ac02762e81e8c765b563ead}\index{ServicoFinanceiro@{ServicoFinanceiro}!excluirTitulo@{excluirTitulo}}
+\index{excluirTitulo@{excluirTitulo}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{excluirTitulo()}{excluirTitulo()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_a16592b2a9ac02762e81e8c765b563ead} 
+void Servico\+Financeiro\+::excluir\+Titulo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption})}
+
+
+
+Exclui um título com base no código fornecido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código do título a ser excluído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se o título não for encontrado. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_ae519a9406959da2e1f4800a2c608b8c8}\index{ServicoFinanceiro@{ServicoFinanceiro}!lerConta@{lerConta}}
+\index{lerConta@{lerConta}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{lerConta()}{lerConta()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_ae519a9406959da2e1f4800a2c608b8c8} 
+\mbox{\hyperlink{class_conta}{Conta}} Servico\+Financeiro\+::ler\+Conta (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cpf}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna uma conta pelo CPF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF da conta a ser buscada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_conta}{Conta} A conta correspondente ao CPF fornecido. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Se a conta não for encontrada. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_servico_financeiro_a9a8ad9bd8b7923fb3e32c12c0be0f202}\index{ServicoFinanceiro@{ServicoFinanceiro}!lerContas@{lerContas}}
+\index{lerContas@{lerContas}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{lerContas()}{lerContas()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_a9a8ad9bd8b7923fb3e32c12c0be0f202} 
+std\+::vector$<$ \mbox{\hyperlink{class_conta}{Conta}} $>$ Servico\+Financeiro\+::ler\+Contas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna todas as contas gerenciadas. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Conta$>$ Um vetor contendo todas as contas. 
+\end{DoxyReturn}
+\Hypertarget{class_servico_financeiro_a9ffbf2fb289145280031a5cc6d1873e5}\index{ServicoFinanceiro@{ServicoFinanceiro}!lerPagamentos@{lerPagamentos}}
+\index{lerPagamentos@{lerPagamentos}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{lerPagamentos()}{lerPagamentos()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_a9ffbf2fb289145280031a5cc6d1873e5} 
+std\+::vector$<$ \mbox{\hyperlink{class_pagamento}{Pagamento}} $>$ Servico\+Financeiro\+::ler\+Pagamentos (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna todos os pagamentos associados a um código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código dos pagamentos a serem buscados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Pagamento$>$ Um vetor contendo todos os pagamentos associados ao código fornecido. 
+\end{DoxyReturn}
+\Hypertarget{class_servico_financeiro_ad0e81fb5e09d117abe18af1dc475becb}\index{ServicoFinanceiro@{ServicoFinanceiro}!lerTitulos@{lerTitulos}}
+\index{lerTitulos@{lerTitulos}!ServicoFinanceiro@{ServicoFinanceiro}}
+\doxysubsubsection{\texorpdfstring{lerTitulos()}{lerTitulos()}}
+{\footnotesize\ttfamily \label{class_servico_financeiro_ad0e81fb5e09d117abe18af1dc475becb} 
+std\+::vector$<$ \mbox{\hyperlink{class_titulo}{Titulo}} $>$ Servico\+Financeiro\+::ler\+Titulos (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codigo}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca e retorna todos os títulos associados a um código. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo} & O código dos títulos a serem buscados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Titulo$>$ Um vetor contendo todos os títulos associados ao código fornecido. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Servico\+Financeiro.\+h\item 
+src/Servico\+Financeiro.\+cpp\end{DoxyCompactItemize}

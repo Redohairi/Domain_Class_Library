@@ -1,0 +1,27 @@
+\doxysection{Conta\+Manager.\+h}
+\hypertarget{_conta_manager_8h_source}{}\label{_conta_manager_8h_source}\index{include/ContaManager.h@{include/ContaManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTAMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTAMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Conta.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_conta_manager}{ContaManager}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::vector<Conta>\ contas;\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_conta_manager_af4a83d80271d8d0a23b03b11e5a16547}{criarConta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_conta}{Conta}}\&\ conta);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_conta}{Conta}}\ \mbox{\hyperlink{class_conta_manager_ab22c23496d7b72978b9da0e5a4384b67}{lerConta}}(\textcolor{keyword}{const}\ std::string\&\ cpf)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_conta_manager_aae2c354000c9e08a5abcd65971bb69ff}{atualizarConta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_conta}{Conta}}\&\ conta);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_conta_manager_a1d913174779808da54f02b7b321d482a}{excluirConta}}(\textcolor{keyword}{const}\ std::string\&\ cpf);}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTAMANAGER\_H}}
+
+\end{DoxyCode}
